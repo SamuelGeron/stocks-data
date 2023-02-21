@@ -21,7 +21,7 @@ def ext_stock_ohlcv(interval, period, *tickers, **params):
             except:
                 print('error on: ' + ticker)
 
-    # Store data
+    # Return data
     return pd.concat(ohlcv_data)
 
 # ext_stock_ohlcv('1h', '1y', 'DHER.DE','O5H.DE', 'DB1.DE')
